@@ -17,7 +17,7 @@ def _get_screen_height():#获取安卓屏幕的高
     size_str = adb.get_screen()
     m = re.search(r'(\d+)x(\d+)', size_str)
     if m:
-        return int(m.group(2)) #group 2不懂
+        return int(m.group(2))
     return 1920
 
 def _get_screen_width():#获取安卓屏幕的宽
